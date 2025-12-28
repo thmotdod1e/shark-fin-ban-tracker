@@ -1,0 +1,68 @@
+name: Legislation Update
+description: Submit new or updated information about shark fin legislation
+labels: ["data", "legislation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the following details about the shark fin legislation.
+        All fields are required unless otherwise noted.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Name of the country where the legislation applies
+      placeholder: e.g., "United States"
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction
+      description: "Federal" for national laws, or state/province/territory name
+      placeholder: e.g., "Federal", "California", "Ontario"
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: Current legislative status
+      options:
+        - Banned
+        - Proposed
+        - None
+    validations:
+      required: true
+  - type: input
+    id: law_name
+    attributes:
+      label: Law Name / Bill Number
+      description: Official name or bill number of the legislation
+      placeholder: e.g., "Shark Fin Sales Elimination Act", "AB 376"
+    validations:
+      required: true
+  - type: input
+    id: year_enacted
+    attributes:
+      label: Year Enacted (if applicable)
+      description: Year the law was passed (leave blank if status is "Proposed" or "None")
+      placeholder: e.g., "2022"
+    validations:
+      required: false
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      description: Link to official text or reputable news article
+      placeholder: e.g., "https://www.congress.gov/bill/..."
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any extra context or comments about this entry
+      placeholder: Optional details about the legislation, implementation status, etc.
+    validations:
+      required: false
