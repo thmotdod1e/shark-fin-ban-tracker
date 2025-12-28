@@ -1,0 +1,44 @@
+# Global Shark Fin Ban Legislation Tracker
+# This file contains a list of legislative actions on shark fin bans.
+# Each entry should follow the structure:
+# - country: Country name (string)
+# - jurisdiction: "Federal" for national laws, or state/province/territory name (string)
+# - status: "Banned", "Proposed", or "None"
+# - law_name: Official name or bill number (string)
+# - year_enacted: Year law was passed (integer, optional for "Proposed" or "None")
+# - source_url: URL to official text or reputable news article (string)
+
+- country: United States
+  jurisdiction: Federal
+  status: Banned
+  law_name: Shark Fin Sales Elimination Act
+  year_enacted: 2022
+  source_url: https://www.congress.gov/bill/117th-congress/house-bill/2811
+
+- country: Canada
+  jurisdiction: Federal
+  status: Banned
+  law_name: Fisheries Act amendments (Bill C-68)
+  year_enacted: 2019
+  source_url: https://laws-lois.justice.gc.ca/eng/acts/F-14/
+
+- country: United States
+  jurisdiction: California
+  status: Banned
+  law_name: California Shark Fin Law (AB 376)
+  year_enacted: 2011
+  source_url: https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201120120AB376
+
+- country: Australia
+  jurisdiction: Federal
+  status: Proposed
+  law_name: Shark Fin Prohibition Bill 2023
+  year_enacted: null
+  source_url: https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7012
+
+- country: Brazil
+  jurisdiction: Federal
+  status: None
+  law_name: (No current ban)
+  year_enacted: null
+  source_url: https://www.icmbio.gov.br/
